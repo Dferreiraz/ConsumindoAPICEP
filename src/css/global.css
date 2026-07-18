@@ -79,16 +79,15 @@ a{
     text-decoration: none;
 }
 
-.btn-primary, .btn-cart {
+.btn-primary, .btn-cart,.btn-enviar {
   font-family: var(--font-family);
   font-size: 16px;
-  font-weight: 500; /* Medium */
+  font-weight: 500;
   line-height: auto;
   
   background-color: var(--color-primary);
-  color: var(--color-black); /* Cor do texto interna baseada na imagem */
+  color: var(--color-black); 
   
-  /* Estilização base do botão arredondado da imagem */
   padding: 10px 24px;
   border: none;
   border-radius: 20px 0px;
@@ -97,6 +96,5 @@ a{
 }
 
 .btn-primary:hover, .btn-cart {
-  /* Um efeito leve de hover para o botão não ficar estático */
   filter: brightness(0.9);
 }
