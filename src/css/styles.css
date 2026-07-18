@@ -1,1 +1,42 @@
 @import url(./global.css);
+
+header {
+  padding: 24px 60px;
+  background-color: var(--color-white);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-link {
+  color: var(--color-black);
+  font-weight: 400;
+  font-size: 16px;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: var(--color-primary);
+}
+
+.btn-login {
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  padding: 12px 36px;
+  font-weight: 700;
+  border-radius: 8px;
+  font-size: 16px;
+  transition: opacity 0.2s ease;
+}
+
+.btn-login:hover {
+  opacity: 0.9;
+}
