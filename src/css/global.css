@@ -1,0 +1,74 @@
+/* ==========================================================================
+   RESETS E ESTILOS BASE
+   ========================================================================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 400; /* Regular */
+  line-height: auto;
+  color: var(--color-black);
+  background-color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ==========================================================================
+   VARIÁVEIS GLOBAIS (Cores)
+   ========================================================================== */
+:root {
+  /* Primary */
+  --color-primary: #B0CB1F;
+  --color-primary-rgb: 176, 203, 31;
+
+  /* Secondary */
+  --color-white: #FFFFFF;
+  --color-black: #333231;
+  --color-black-rgb: 51, 50, 49;
+
+  /* Font Family Padrão */
+  --font-family: 'Inter', sans-serif;
+}
+
+/* ==========================================================================
+   TIPOGRAFIA (Headlines & Body)
+   ========================================================================== */
+h1, .h1 {
+  font-family: var(--font-family);
+  font-size: 60px;
+  font-weight: 700; /* Bold */
+  line-height: auto;
+}
+
+h2, .h2 {
+  font-family: var(--font-family);
+  font-size: 48px;
+  font-weight: 700; /* Bold */
+  line-height: auto;
+}
+
+h3, .h3 {
+  font-family: var(--font-family);
+  font-size: 40px;
+  font-weight: 700; /* Bold */
+  line-height: auto;
+}
+
+h4, .h4 {
+  font-family: var(--font-family);
+  font-size: 25px;
+  font-weight: 700; /* Bold */
+  line-height: auto;
+}
+
+/* Estilo para textos corridos (Body) se quiser aplicar via classe */
+.text-body {
+  font-size: 16px;
+  font-weight: 400; /* Regular */
+  line-height: auto;
+}
+
