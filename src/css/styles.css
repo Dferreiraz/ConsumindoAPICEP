@@ -102,7 +102,7 @@ header {
 .current-price {
   font-size: 32px;
   font-weight: 700;
-  color: #2D9CDB; /* Azul destacado do preço principal */
+  color: #2D9CDB; 
 }
 
 .old-price {
@@ -157,4 +157,88 @@ header {
 
 .btn-cart {
   align-self: flex-start;
+}
+
+.btn-cart:hover {
+  opacity: 0.9;
+}
+
+/* Seção Informações */
+
+.secao-informacoes {
+  background-color: #F8FAF0; /* Fundo esverdeado bem claro da imagem */
+  padding: 60px 0 80px 0;
+}
+
+.titulo-secao {
+  text-align: center;
+  margin-bottom: 48px;
+  color: #000000;
+}
+
+.formulario-info {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.linha-formulario {
+  display: flex;
+  gap: 20px;
+}
+
+.linha-3-colunas .grupo-campo {
+  flex: 1;
+}
+
+.linha-2-colunas .grupo-campo {
+  width: calc(33.333% - 13.33px); /* Mantém o alinhamento com as linhas de 3 colunas */
+}
+
+.grupo-campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grupo-campo label {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+.grupo-campo input {
+  height: 44px;
+  border: 1px solid #757575;
+  border-radius: 8px;
+  background-color: transparent;
+  padding: 0 12px;
+  font-family: var(--font-family);
+  font-size: 16px;
+  color: var(--color-black);
+  outline: none;
+}
+
+.grupo-campo input:focus {
+  border-color: var(--color-primary);
+}
+
+.botao-enviar {
+  align-self: flex-start;
+  background-color: var(--color-primary);
+  color: var(--color-black);
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 48px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 12px;
+  transition: opacity 0.2s ease;
+}
+
+.botao-enviar:hover {
+  opacity: 0.9;
 }
