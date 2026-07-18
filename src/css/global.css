@@ -13,7 +13,6 @@ body {
   font-weight: 400; /* Regular */
   line-height: auto;
   color: var(--color-black);
-  background-color: var(--color-white);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -72,3 +71,32 @@ h4, .h4 {
   line-height: auto;
 }
 
+/* ==========================================================================
+   COMPONENTES
+   ========================================================================== */
+
+a{
+    text-decoration: none;
+}
+
+.btn-primary {
+  font-family: var(--font-family);
+  font-size: 16px;
+  font-weight: 500; /* Medium */
+  line-height: auto;
+  
+  background-color: var(--color-primary);
+  color: var(--color-black); /* Cor do texto interna baseada na imagem */
+  
+  /* Estilização base do botão arredondado da imagem */
+  padding: 10px 24px;
+  border: none;
+  border-radius: 100px; /* Deixa as bordas bem arredondadas como no print */
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+  /* Um efeito leve de hover para o botão não ficar estático */
+  filter: brightness(0.9);
+}
