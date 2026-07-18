@@ -1,70 +1,125 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>E-Commerce</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
- 
-  <link rel="stylesheet" href="./src/css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./src/css/styles.css">
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="container header-container">
-      <div href="#" class="logo">
-        <img src="./src/assets/img/logo.svg" alt="Logo E-Commerce">
-      </div>
-      <nav class="nav-menu">
-        <a href="" class="nav-link">Home</a>
-        <a href="" class="nav-link">Produtos</a>
-        <a href="" class="nav-link">Sobre nós</a>
-        <a href="" class="nav-link">Contato</a>
-      </nav>
-      <a href="" class="btn-primary">Login</a>
-    </div>
-  </header>
+    <!-- HEADER -->
+    <header>
+        <div class="container header-container">
+            <div href="#" class="logo">
+                <img src="./src/assets/img/logo.svg" alt="Logo E-Commerce">
+            </div>
+            <nav class="nav-menu">
+                <a href="" class="nav-link">Home</a>
+                <a href="" class="nav-link">Produtos</a>
+                <a href="" class="nav-link">Sobre nós</a>
+                <a href="" class="nav-link">Contato</a>
+            </nav>
+            <a href="" class="btn-primary">Login</a>
+        </div>
+    </header>
 
-  <!-- MAIN PRODUCT SECTION -->
-  <main class="product-section">
-    <div class="container product-container">
-      <div class="product-image">
-        <!-- Substitua pelo caminho real da imagem do MacBook -->
-        <img src="./src/assets/img/Product.svg" alt="2020 Apple MacBook Pro com Chip M1">
-      </div>
-      
-      <div class="product-details">
-        <div class="rating-box">
-          <span class="stars">★★★★★</span>
-          <span class="rating-text"><strong>5.0 Estrelas</strong> (21.671 avaliações)</span>
+    <!-- MAIN PRODUCT SECTION -->
+    <main class="product-section">
+        <div class="container product-container">
+            <div class="product-image">
+                <!-- Substitua pelo caminho real da imagem do MacBook -->
+                <img src="./src/assets/img/Product.svg" alt="2020 Apple MacBook Pro com Chip M1">
+            </div>
+
+            <div class="product-details">
+                <div class="rating-box">
+                    <span class="stars">★★★★★</span>
+                    <span class="rating-text"><strong>5.0 Estrelas</strong> (21.671 avaliações)</span>
+                </div>
+
+                <h1 class="product-title">
+                    2020 Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray
+                </h1>
+
+                <div class="price-container">
+                    <span class="current-price">R$ 5.299,00</span>
+                    <span class="old-price">R$ 7.000,00</span>
+                    <span class="discount-badge">24,3% OFF</span>
+                </div>
+
+                <div class="color-selection">
+                    <p class="color-p">Cor</p>
+                    <div class="color-options">
+                        <button class="color-dot active"></button>
+                        <button class="color-dot dot2"></button>
+                    </div>
+                </div>
+
+                <button class="btn-cart">Adicionar no carrinho</button>
+            </div>
         </div>
-        
-        <h1 class="product-title">
-          2020 Apple MacBook Pro with Apple M1 Chip (13-inch, 8GB RAM, 256GB SSD Storage) - Space Gray
-        </h1>
-        
-        <div class="price-container">
-          <span class="current-price">R$ 5.299,00</span>
-          <span class="old-price">R$ 7.000,00</span>
-          <span class="discount-badge">24,3% OFF</span>
+    </main>
+
+    <!-- SEÇÃO DE INFORMAÇÕES -->
+    <section class="secao-informacoes">
+        <div class="container">
+            <h2 class="titulo-secao">Informações</h2>
+
+            <form class="formulario-info">
+                <div class="linha-formulario linha-3-colunas">
+                    <div class="grupo-campo">
+                        <label for="nome">Nome completo:</label>
+                        <input type="text" id="nome" name="nome">
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="cpf">CPF:</label>
+                        <input type="text" id="cpf" name="cpf">
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="cep">CEP:</label>
+                        <input type="text" id="cep" name="cep">
+                    </div>
+                </div>
+
+                <div class="linha-formulario linha-3-colunas">
+                    <div class="grupo-campo">
+                        <label for="rua">Rua:</label>
+                        <input type="text" id="rua" name="rua">
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="numero">Número:</label>
+                        <input type="text" id="numero" name="numero">
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="complemento">Complemento:</label>
+                        <input type="text" id="complemento" name="complemento">
+                    </div>
+                </div>
+
+                <div class="linha-formulario linha-2-colunas">
+                    <div class="grupo-campo">
+                        <label for="estado">Estado:</label>
+                        <input type="text" id="estado" name="estado">
+                    </div>
+                    <div class="grupo-campo">
+                        <label for="bairro">Bairro:</label>
+                        <input type="text" id="bairro" name="bairro">
+                    </div>
+                </div>
+
+                <button type="submit" class="botao-enviar">Enviar</button>
+            </form>
         </div>
-        
-        <div class="color-selection">
-          <p class="color-p">Cor</p>
-          <div class="color-options">
-            <button class="color-dot active"></button>
-            <button class="color-dot dot2"></button>
-          </div>
-        </div>
-        
-        <button class="btn-cart">Adicionar no carrinho</button>
-      </div>
-    </div>
-  </main>
+    </section>
 
 </body>
+
 </html>
