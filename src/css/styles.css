@@ -27,16 +27,134 @@ header {
   color: var(--color-primary);
 }
 
-.btn-login {
-  background-color: var(--color-primary);
-  color: var(--color-black);
-  padding: 12px 36px;
-  font-weight: 700;
-  border-radius: 8px;
-  font-size: 16px;
-  transition: opacity 0.2s ease;
+/* Product */
+
+.product-section {
+  padding: 80px 0;
+  background-color: var(--color-white);
 }
 
-.btn-login:hover {
-  opacity: 0.9;
+.product-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.product-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+}
+
+.product-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Avaliação por estrelas */
+.rating-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.stars {
+  color: #F18A22; /* Cor âmbar/laranja das estrelas */
+  font-size: 18px;
+}
+
+.rating-text {
+  font-size: 13px;
+  color: #8C8A88;
+}
+
+.rating-text strong {
+  color: var(--color-black);
+}
+
+/* Título do Produto */
+.product-title {
+  color: var(--color-black);
+  margin-bottom: 24px;
+  font-size: 20px; 
+  font-weight: 400;
+  line-height: 1.4;
+  width: 650px;
+}
+
+/* Container de Preços */
+.price-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.current-price {
+  font-size: 32px;
+  font-weight: 700;
+  color: #2D9CDB; /* Azul destacado do preço principal */
+}
+
+.old-price {
+  font-size: 16px;
+  color: #A6A5A4;
+  text-decoration: line-through;
+}
+
+.discount-badge {
+  background-color: #F2D022; /* Fundo amarelo do badge */
+  color: var(--color-black);
+  font-size: 14px;
+  font-weight: 700;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+/* Seleção de Cores */
+.color-selection {
+  margin-bottom: 32px;
+}
+
+.color-labelx {
+  font-size: 14px;
+  color: var(--color-black);
+  margin-bottom: 8px;
+}
+
+.color-options {
+  display: flex;
+  gap: 12px;
+}
+
+.color-dot {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  outline: none;
+  background-color: #B2B4B8
+}
+
+.dot2{
+    background-color: #E3E4E5
+}
+
+.color-dot.active {
+  border-color: #8C8A88;
+  box-shadow: 0 0 0 2px var(--color-white) inset;
+}
+
+.btn-cart {
+  align-self: flex-start;
 }

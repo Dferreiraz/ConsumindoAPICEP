@@ -79,7 +79,7 @@ a{
     text-decoration: none;
 }
 
-.btn-primary {
+.btn-primary, .btn-cart {
   font-family: var(--font-family);
   font-size: 16px;
   font-weight: 500; /* Medium */
@@ -91,12 +91,12 @@ a{
   /* Estilização base do botão arredondado da imagem */
   padding: 10px 24px;
   border: none;
-  border-radius: 100px; /* Deixa as bordas bem arredondadas como no print */
+  border-radius: 20px 0px;
   cursor: pointer;
   transition: background-color 0.2s ease;
 }
 
-.btn-primary:hover {
+.btn-primary:hover, .btn-cart {
   /* Um efeito leve de hover para o botão não ficar estático */
   filter: brightness(0.9);
 }
